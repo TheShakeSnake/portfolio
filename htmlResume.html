@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title to appear in browser tab -->
+        <title>
+            Troyer Hostetler Resume/Portfolio
+          </title>
+          <!-- Style tag for making resume look pretty -->
+          <style>
+            body{
+              /* font is set to Georgia, the closest I could find to the source */
+              font-family: Georgia;
+              font-size: 110%;
+            }
+      
+            header{
+              /*align everything in the header to the center */
+              text-align: center;
+            }
+            h1{
+              /*make the name bigger, adjust the margin */
+              font-size: 250%;
+              margin: 5px;
+      
+            }
+            hr{
+              /*Horizontal rule needs to be thicker and adjust margin to be closer to source */
+              border: 2px solid black;
+              margin: 0px;
+      
+            }
+            header > p{
+              /* causes p tags in the header to appear in a row, adjust margin for spacing */
+              display: inline;
+              margin: 20px;
+            }
+            #desc{
+              /* description paragraph needs to be italic */
+              font-style: italic;
+            }
+            h2{
+              /* title for each section is teal, adjust margin */
+              color: teal;
+              margin: 0px;
+            }
+            .workdate{
+              /* date is gray, needs to be inline to allow location to be on the same line */
+              color: gray;
+              display: inline;
+              margin: 3px;
+            }
+            .worklocation{
+              /* gray, float to the right of the page, display inline to appear on same line as date */
+              color: gray;
+              float: right;
+              display: inline;
+              margin: 3px;
+            }
+            /*margin adjustments */
+            .title{
+              margin:3px;
+            }
+            ul, li{
+              margin-top: 3px;
+            }
+            table p {
+              margin: 5px;
+            }
+            p.skills {
+              margin: 5px;
+            }
+            /* style for link box */
+            #linkDisplay{
+              border:1px solid black;
+              background-color: aliceblue;
+              position: absolute;
+              visibility: hidden;
+            }
+            #errormessage{
+              color: red;
+              text-align: center;
+              font: 30px;
+            }
+      
+      
+      
+      
+          </style>
+</head>
+<body>
+    <!-- top of the document, centered due to style applied above -->
+    <header>
+        <h1>Troyer Hostetler</h1>
+        <p class = "headp"> troyer.hostetler@yahoo.com</p>
+        <p class = "headp">(937)896-9008</p>
+        <p class = "headp">4321 Swisher Road</p>
+        <p class = "headp">Urbana OH 43078</p>
+        <!-- was having issuses with LinkedIn, linked my GitHub instead -->
+        <p class = "headp"><a href = "https://github.com/TheShakeSnake">GitHub</a></p>
+        <div>
+          <p id ="desc">Recent Graduate from Eastern Michigan University with a BS in Computer Science pursuing career opportunities in Software Engineering. Hoping to learn new Software Engineering priciples and practices and aquire more leadership skills.</p>
+        </div>
+      </header>
+    </section>
+        <!-- Section for previous employment portion of resume -->
+    <section>
+      <h2>EMPLOYMENT</h2>
+      <hr>
+      <p class = "title"><b>United Dairy Farmers</b> - Clerk/Cashier</p>
+      <p class = "workdate"> March 2018 - March 2020</p>
+      <p class = "worklocation" style => 210 Miami Street, Urbana OH.</p>
+      <ul>
+        <li>Handled customer transactions</li>
+        <li>Restocked general merchandise</li>
+        <li>Performed general housekeeping duties throughout the store</li>
+      </ul>
+  
+  
+      <p class = "title"><b>Walmart</b> - Entertainment Team Associate</p>
+      <p class = "workdate">January 2021 - Present</p>
+      <p class = "worklocation">1840 US-36, Urbana OH</p>
+      <ul>
+        <li>Provided customer service</li>
+        <li>Handled customer transactions</li>
+        <li>Assisted with customer needs</li>
+        <li>Sorted/dropped cash into company safe</li>
+      </ul>
+  
+      <p class = "title"><b> Ultra-Met</b> - IT Intern</p>
+      <p class = "workdate">May 2023-August 2023</p>
+      <p class = "worklocation">720 North Main Street, Urbana OH.</p>
+        <ul>
+          <li>Removed old files and set up a SharePoint site for other files</li>
+          <li>Aided in the deployment of two-factor authentication for Microsoft office products and common accounts</li>
+          <li>Configured a digital media player to show progress reports throughout the factory</li>
+        </ul>
+    </section>
+    <!-- Section for projects portion of resume -->
+  <section>
+    <h2>PROJECTS</h2>
+    <hr>
+    <a href = "./simulation-and-animation-of-opinion-formation/"> <p class = "title"><b>Simulation and animation of opinion formation</b></a> - Co-Creator</p>
+    <ul>
+      <li> Simulation and animation of opinion formation models involving single mimicking, majority adoption, group change, persisting minority, and external influence</li>
+      <li>Done in a group of two and presented at the 43rd EMU Undergraduate Symposium</li>
+      <li>Written in Java
+    </ul>
+    <a href = "./encryption-software"><p class = "title"><b>Encryption software</b></a> - Creator</p>
+    <ul>
+      <li>Program that encrypts text files using either a Caesar cipher with shifts and integer keys, or a Vigenère cipher with multiple shifts and a password</li>
+      <li>Program also decrypts the encrypted files</li>
+      <li>The encryption and decryption keys/passwords are specified by the user</li>
+      <li>Written in Java</li>
+    </ul>
+    <a href = "./fantasy-baseball"> <p class = "title"><b>Fantasy Baseball Draft</b></a> - Student collaboration</p>
+    <ul>
+      <li>Fantasy baseball java application that allows four users to draft baseball players to fill every position on a baseball team and five pitchers</li>
+      <li>Reads 2023 players and statistics from a csv file allowing them to be drafted using specific commands</li>
+      <li>Developed using agile development techniques, GitHub, and tested using Junit testing</li>
+    </ul>
+    <a href = "./simulation-of-ques/"><p class = "title"><b>Modeling/simulation of queues</b></a> - Creator</p>
+    <ul>
+      <li>Program that builds and simulates single server/single queue, single server/multiple queues, multiple servers/single queue, and multiple servers/multiple queues in a customer-server environment
+      <li> Program evaluates the queue systems based on customer wait time, queue size, and number of customers served</li>
+      <li>Written in Java</li>
+    </ul>
+    <a href = "./weather-app/"><p class = "title"><b>Android moblie weather app</b></a> - Creator</p>
+    <ul>
+      <li>Mobile application for android that displays the current weather and partial three day forecast for five cities</li>
+      <li>Retrieves live weather data using the OpenWeather 4 day forecast API</li>
+      <li>Written in Java with layout done in XML using Android Studio</li>
+    </ul>
+    <a href = "./insurance-premium-classifier/"><p class = "title"><b>Insurance premium classifier</b></a> - Front-end Developer</p>
+    <ul>
+      <li>Web application that allows users to get a car insurance quote by entering their information</li>
+      <li>Application generates quote by giving the information to a neural network using TensorFlow and Keres in Python</li>
+      <li>Data is then sent to front end where it is displayed using the React Javascript library</li>
+    </ul>
+  </section>
+      <!-- Section for education portion of resume -->
+    <section>
+      <h2>EDUCATION</h2>
+      <hr>
+        <p class = "title"><b>Eastern Michigan University</b> - B.S., Computer Science,GPA: 3.81/4.0 </p>
+        <p class = "workdate">August 2020 - April 2024</p>
+        <p class = "worklocation"> Ypsilanti, Michigan</p>
+        <br>
+        <p class  = "title"><b>University of Northwestern Ohio</b> - A.S, Robotics and Automation Technology</p>
+        <p class = "workdate">August 2018 - March 2020</p>
+        <p class = "worklocation">Lima, Ohio</p>
+    </section>
+      <!-- Section for aquired computer skills portion of resume -->
+    <section>
+      <h2>COMPUTER SKILLS</h2>
+      <hr>
+        <p class = "skills" ><b>Programming lanugages</b>: Java, Python ,C, C++, C#</p>
+        <p class = "skills" ><b>Web and Mobile development</b>: JavaScript, HTML, CSS, Swift, PHP, React</p>
+        <p class = "skills" ><b>Software development</b>: Git, Junit, Agile</p>
+        <p class = "skills" ><b>IDEs</b>: Visual Studio, Eclipse</p>
+        <p class = "skills" ><b>Operating systems</b>: Windows, Mac</p>
+        <p class = "skills" ><b>Hardware/electrical</b>: DC/AC Circuts, BJT Transistors, IPC-ISA Soldering</p>
+        <p class = "skills" ><b>Others</b>: Lisp, LC-3, Microsoft Office, OSHA Certification, MySQL, BASH</p>
+    </section>
+        <!-- Section for couses portion of resume -->
+    <section>
+      <h2>COURSES</h2>
+      <hr>
+      <!--info is put into a table to keep classes side by side rather than one long list -->
+        <table>
+          <tr>
+            <td>
+              <p>Introduction to Programming</p>
+              <p>Programming Data Structures</p>
+              <p>Algorithims and Data Structures</p>
+              <p>Computer Organization I/II</p>
+              <p>Internet Based Computing</p>
+              <p>Computational Discrete Mathematics</p>
+              <p>Programming Languages</p>
+              <p>Robotics/Automation Capstone</p>
+              <p>Intro to Artificial Intelligence</p>
+            </td>
+            <td>
+              <p>Robotics Integration</p>
+              <p>Programmable Logic Controllers</p>
+              <p>Calculus I</p>
+              <p>Statistical Methods</p>
+              <p>Web Programming</p>
+              <p>Software Engineering Solutions</p>
+              <p>Database Principles</p>
+              <!--empty table entry to keep classes aligned -->
+              <p>Software Engineering Capstone</p>
+              <p>Software development for mobile devices</p>
+            </td>
+          </tr>
+      </table>
+  
+    </section>
+    
+</body>
+</html>
